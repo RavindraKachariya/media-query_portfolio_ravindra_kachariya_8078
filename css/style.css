@@ -1,0 +1,255 @@
+/* Common CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../asset/image/body-bg.png');
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 80px;
+    margin-top: 80px;
+}
+
+/* Side Area Start */
+
+.sidebar-area {
+    display: flex;
+    flex-direction: column;
+    max-width: 15%;
+    position: sticky;
+    top: 80px;
+}
+
+.logo {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 24px 32px;
+}
+
+.logo img {
+    max-width: 140px;
+    height: auto;
+}
+
+.list-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background-color: #f4f4f6;
+    padding: 20px 0;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    gap: 12px;
+    background-color: #fdfdfd;
+    width: 70%;
+}
+
+.list-group-item img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    transition: filter 0.3s ease;
+}
+
+/* Side Area Right / Hero Section */
+
+.sidebar-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 710px;
+    max-height: 85%;
+}
+
+.header-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header-top-image {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.skill-1 h2 {
+    font-size: 4rem;
+    margin-bottom: 30px;
+}
+
+.marketer {
+    position: relative;
+    display: inline-block;
+    padding: 20px 40px;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Georgia', serif;
+    color: #ff6600;
+    border: 2px solid orange;
+    background-color: white;
+    margin: auto;
+    margin-left: 350px;
+
+}
+
+.marketer img {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+}
+
+.marketer-1 {
+    top: -8px;
+    left: -8px;
+}
+
+.marketer-2 {
+    top: -8px;
+    right: -8px;
+}
+
+.marketer-3 {
+    bottom: -8px;
+    left: -8px;
+}
+
+.marketer-4 {
+    bottom: -8px;
+    right: -8px;
+}
+
+.header-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.header-bottom-description p {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.387);
+    font-weight: 600;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+
+.home-btn {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.dwn-btn {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    background: linear-gradient(135deg, #ff6600, #ff9900);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+}
+
+.dwn-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.play-video-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.svg-wrapper {
+    position: relative;
+}
+
+.ring-img {
+    width: 100%;
+    height: 100%;
+}
+
+.inner-circle {
+    position: absolute;
+    top: 15px;
+    left: 17px;
+    width: 38px;
+    height: 38px;
+    background-color: #ff6600;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-icon {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding-left: 3px;
+}
+
+.btn-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff6600;
+    margin-left: -10px;
+}
+
+.header-images-backImages {
+    position: absolute;
+    bottom: 250px;
+    left: 500px;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header-bottom-image {
+    position: relative;
+}
+
+.header-bottom-image img {
+    margin-top: -120px;
+}
+
+.header-images-backImages {
+    z-index: -1;
+    left: 380px;
+    bottom: 65px;
+}
