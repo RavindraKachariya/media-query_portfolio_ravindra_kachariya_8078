@@ -18,6 +18,16 @@ body {
     position: relative;
 }
 
+ol,
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Main Css */
 .main-header {
     display: flex;
     justify-content: space-between;
@@ -26,7 +36,7 @@ body {
     margin-top: 100px;
 }
 
-/* Side Area Start */
+/* Sidebar Start */
 
 .sidebar-area {
     display: flex;
@@ -83,7 +93,9 @@ body {
     transition: filter 0.3s ease;
 }
 
-/* Side Area Right / Hero Section */
+/* Sidebar End */
+
+/* Side Area Right / Home Section Start */
 
 .sidebar-right {
     display: flex;
@@ -303,3 +315,83 @@ body {
     font-size: 20px;
     color: #000;
 }
+
+/* Side Area Right / Home Section End */
+
+/* About Section Start */
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 280px;
+    width: calc(100% - 240px);
+}
+
+.about-boxareas {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.about-boxarea {
+    position: relative;
+    /* adjust based on image aspect ratio */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-boxarea .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.about-boxarea .content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ff6600;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.about-boxarea .content p {
+    font-size: 1rem;
+    color: #5b616b;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.05rem;
+}
+
+.about-boxarea-2 .content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.about-boxarea-2 .content p {
+    font-size: 1rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 0.05rem;
+}
+
+.about-boxarea-1 {
+    transform: translateX(-30px);
+}
+
+.about-boxarea-2 {
+    transform: translateX(100px);
+}
+
+.about-boxarea-3 {
+    transform: translateX(-30px);
+}
+
+
+/* About Section End */
