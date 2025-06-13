@@ -8,21 +8,22 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url('../asset/image/body-bg.png');
-    display: flex;
+    /* display: flex; */
     justify-content: center;
 }
 
 .container {
     max-width: 1320px;
     margin: 0 auto;
+    position: relative;
 }
 
 .main-header {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    gap: 80px;
-    margin-top: 80px;
+    gap: 100px;
+    margin-top: 100px;
 }
 
 /* Side Area Start */
@@ -31,8 +32,14 @@ body {
     display: flex;
     flex-direction: column;
     max-width: 15%;
-    position: sticky;
     top: 80px;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    width: 240px;
+    overflow-y: auto;
+    background: #f4f4f6;
+    z-index: 1000;
 }
 
 .logo {
@@ -84,6 +91,8 @@ body {
     justify-content: center;
     max-height: 710px;
     max-height: 85%;
+    margin-left: 280px;
+    width: calc(100% - 240px);
 }
 
 .header-top {
@@ -252,4 +261,45 @@ body {
     z-index: -1;
     left: 380px;
     bottom: 65px;
+}
+
+.socia-links-area {
+    text-align: center;
+    font-family: sans-serif;
+    /* margin-top: 150px; */
+    position: absolute;
+    top: 600px;
+    right: 170px;
+}
+
+.socia-links-area h5 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.socia-links-area ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.socia-links-area ul li {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.socia-links-area ul li i {
+    font-size: 20px;
+    color: #000;
 }
