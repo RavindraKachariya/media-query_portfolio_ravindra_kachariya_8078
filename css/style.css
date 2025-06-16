@@ -883,6 +883,20 @@ a {
     visibility: hidden;
 }
 
+.portfolio-card:hover .overlay {
+    transform: translateX(-98px);
+    transition: transform 0.5s;
+}
+
+.portfolio-card:hover .overlay-1 {
+    transform: translateX(-76px);
+    transition: transform 0.5s;
+}
+
+.portfolio-card:hover .main-image {
+    transform: scale(1.1);
+}
+
 /* Portfolio Section End */
 
 /* Feedback / Testimonials Section Start */

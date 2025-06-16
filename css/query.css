@@ -158,11 +158,37 @@
         gap: 20px;
     }
 
+    .about-image {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
     .about-image_1,
     .about-image_2,
     .about-image_3 {
         position: static;
         transform: none !important;
+    }
+
+    .about-subimage-1 {
+        position: absolute;
+        top: 100px;
+        left: 50px;
+    }
+
+    .about-subimage-2 {
+        position: absolute;
+        top: 100px;
+        left: 300px;
+    }
+
+    .about-subimage-3 {
+        position: absolute;
+        top: 100px;
+        left: 525px;
+        /* right: 50px; */
     }
 
     .about-section-discription {
@@ -412,6 +438,7 @@
     }
 
     .portfolio-section-discription {
+        margin-top: 100px;
         text-align: center;
     }
 
@@ -668,7 +695,7 @@
     }
 
     .portfolio-button {
-        margin-top: 80px;
+        margin-top: 20px;
         margin-left: 0;
         justify-content: center;
     }
@@ -690,13 +717,14 @@
 
     .contact-section {
         width: 100%;
-        margin-bottom: 150px;
+        margin-bottom: 0px;
     }
 
     .contact-top {
         flex-direction: column;
-        padding: 40px 24px 240px;
+        padding: 40px 24px;
         gap: 40px;
+        margin-top: 80px;
     }
 
     .contact-form {
@@ -712,6 +740,7 @@
     .contact-form .about-btn {
         margin-left: 0;
         align-self: center;
+        margin: auto;
     }
 
     .contact-top .service-section-discription {
@@ -827,7 +856,13 @@
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 100px;
+        margin: auto;
+    }
+
+    .about-subimage-1 {
+        top: 100px;
+        left: 0;
+        right: 0;
         margin: auto;
     }
 
@@ -859,6 +894,29 @@
     .about-image_2 p,
     .about-image_3 p {
         font-size: 16px;
+    }
+
+    .about-image_2>img {
+        max-width: 180px;
+    }
+
+    .image-as-background {
+        height: auto;
+    }
+
+    .about-image_1 .about-subimage-1 {
+        left: 225px;
+        top: 80px;
+    }
+
+    .about-image_2 .about-subimage-2 {
+        left: 225px;
+        top: 300px;
+    }
+
+    .about-image_3 .about-subimage-3 {
+        left: 225px;
+        top: 525px;
     }
 }
 
