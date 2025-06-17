@@ -920,7 +920,6 @@
     }
 }
 
-/* Small Devices (425px and below) */
 @media (max-width: 425px) {
     .about-section-discription h2 {
         font-size: 1.6rem;
