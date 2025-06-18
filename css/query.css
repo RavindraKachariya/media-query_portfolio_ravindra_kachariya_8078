@@ -1,18 +1,11 @@
-@media (min-width: 992px) {
-
-    /* Sidebar Start */
+@media (min-width: 320px) and (max-width: 992px) {
     .mobile-topbar {
-        display: none;
+        display: flex;
     }
 
     .sidebar-area {
-        display: block;
+        display: none;
     }
-
-    /* Sidebar End */
-}
-
-@media (max-width: 992px) {
 
     /* Side Area Right / Home Section Start */
     .sidebar-right {
@@ -495,6 +488,7 @@
         padding: 15px;
         font-size: 1rem;
         text-align: center;
+        background-color: #0E161F;
     }
 
     .overlay h5 {
@@ -668,16 +662,17 @@
         margin-top: 15px;
         position: relative;
         padding: 20px 15px;
-        background-color: #fff;
         border-radius: 8px;
+        background-color: #0E161F;
     }
 
     .blog-section .overlay div {
-        font-size: 0.9rem;
+        font-size: 12px;
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 5px;
         flex-wrap: wrap;
+        justify-content: center;
     }
 
     .blog-section .overlay h6 {
